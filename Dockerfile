@@ -43,4 +43,12 @@ RUN apt-get clean \
     && rm -rf /var/cache/apt/archives
 
 RUN pip install --upgrade pip
-RUN pip install cocotb pytest ipython cocotb-test pytest-cov pytest-xdist bitstring pytest-lazy-fixture
+RUN pip install \
+        cocotb \
+        pytest \
+        ipython \
+        cocotb-test \
+        pytest-cov \
+        pytest-xdist \
+        bitstring \
+        pytest-lazy-fixture
